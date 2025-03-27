@@ -1,4 +1,6 @@
 # Control-of-Relay-Using-IoT-controller
+NAME:REVATHI
+REG NO:212223040169
 
 ##  AIM:
 To control the Relay using Arduino controller
@@ -38,10 +40,30 @@ When there is no voltage applied to the coil, COM (common) is connected to NC (n
 In this Arduino  Relay Control Circuit we have used Arduino to control the relay via a BC547 transistor. We have connected transistor base to Arduino pin A0 through a 1k resistor. An AC bulb is used for demonstration.Working is simple, we need to make the RELAY Pin (PIN A0) high to make the Relay module ON and make the RELAY pin low to turn off the Relay Module. The AC light will also turn on and off according to Relay.
 
 ## PROGRAM:
+```
+void setup() {
+  pinMode(7,OUTPUT);
+}
+void loop() {
+  digitalWrite(7,HIGH);
+  delay(2000);
+  digitalWrite(7,LOW);
+  delay(1000);
+}
+```
+
 
 ## CIRCUIT DIAGRAM:
+![Screenshot 2025-03-27 140707](https://github.com/user-attachments/assets/304923b7-ad52-4d91-a010-f117b84a1119)
+
 
 ## OUTPUT:
+##ON
+![Screenshot 2025-03-27 135952](https://github.com/user-attachments/assets/cbcac47e-17ae-4ff9-9b91-191aa4e1c342)
+##OFF
+![Screenshot 2025-03-27 140341](https://github.com/user-attachments/assets/c16170ca-30a2-43f9-bc3b-7d60475b9593)
+
+
 
 ## RESULT:
 
